@@ -35,7 +35,7 @@ header{
 .landing{
     display: flex;
     justify-content: center;
-    height: 80vh;
+    height: 40vw;
 }
 
 .landing__banner-image{
@@ -61,10 +61,23 @@ header{
     width: 50%;
 }
 
-.section-prinicipale{
-
+.card{
+    display: flex;
 }
 
-.section-prinicipale__image-tableau{
-    width: 35%;
+.card__contenu{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.card__data{
+    display: flex;
+}
+
+.card__data--padding-right{ /*attention BEM*/
+    padding-right: 25px;
+}
+
+.card__btn{
 }
