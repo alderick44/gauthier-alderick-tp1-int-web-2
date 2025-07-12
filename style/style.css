@@ -35,12 +35,13 @@ header{
 .landing{
     display: flex;
     justify-content: center;
+    height: 80vh;
 }
 
 .landing__banner-image{
     width: 100%;
     height: auto;
-    position: fixed;
+    position: absolute;
     z-index: -10;
 }
 
@@ -58,4 +59,12 @@ header{
 .landing__text{
     color: beige;
     width: 50%;
+}
+
+.section-prinicipale{
+
+}
+
+.section-prinicipale__image-tableau{
+    width: 35%;
 }
