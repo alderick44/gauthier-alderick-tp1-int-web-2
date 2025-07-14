@@ -17,12 +17,25 @@ header{
     height: auto;
 }
 
+.logo--center{
+    display: flex;
+    justify-content: center;
+}
+
+.logo--padding{
+    padding: 50px;
+}
+
 .nav{
     display: flex;
     align-items: center;
 }
 
 .nav__btn{
+    padding: 1.5rem;
+}
+
+.nav__btn--padding-right{
     padding-right: 1.5rem;
 }
 
@@ -69,6 +82,7 @@ header{
     display: flex;
     flex-direction: column;
     padding: 25px;
+    width: 35%;
 }
 
 .card__data{
@@ -81,3 +95,17 @@ header{
 
 .card__btn{
 }
+
+.footer__nav{
+    display: flex;
+    justify-content: center;
+}
+
+.subfooter{
+    display: flex;
+    justify-content: space-evenly;
+
+    margin: 25px;
+}
+
+
