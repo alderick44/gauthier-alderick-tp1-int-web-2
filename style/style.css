@@ -96,16 +96,32 @@ header{
 .card__btn{
 }
 
+footer{
+    border-top: 1px solid black;
+}
+
 .footer__nav{
     display: flex;
     justify-content: center;
 }
 
 .subfooter{
-    display: flex;
-    justify-content: space-evenly;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 25px;
+
+        & img{
+        width: 30px;
+        padding: 10px;
+    }
 }
 
+.subfooter__icones{
+    justify-self: center;
+}
 
+.subfooter__contact{
+    display: flex;
+    justify-self: end;
+    align-items: center;
+}
