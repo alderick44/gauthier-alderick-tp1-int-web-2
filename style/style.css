@@ -81,14 +81,20 @@ header{
     text-align: center;
 }
 
+section{
+    padding: 75px;
+}
+
 .card{
     display: flex;
+    justify-content: center;
+    padding: 25px;
 }
 
 .card__contenu{
     display: flex;
     flex-direction: column;
-    padding: 25px;
+    padding: 50px;
     width: 35%;
 }
 
@@ -97,10 +103,20 @@ header{
 }
 
 .card__data--padding-right{ /*attention BEM*/
-    padding-right: 25px;
+    padding-right: 75px;
 }
 
 .card__btn{
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+iframe {
+    width: 38%;
+    height: 500px;
+    border: 0px none;
+
 }
 
 footer{
