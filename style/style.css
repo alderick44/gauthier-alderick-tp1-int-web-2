@@ -1,9 +1,28 @@
+:root {
+
+	/* palette  de couleurs*/
+	--couleur-beige: #FFF8F0;
+	/*sert de blanc*/
+	--couleur-gris-bleu: #f5f5f5;
+	--couleur-blanc-bleu: #f9f9f9;
+	--couleur-gris-transparent: rgb(235, 235, 235, 0.8);
+
+	--couleur-bleu: #0456AF;
+	--couleur-noir: #1F0812;
+
+
+}
+
 header{
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 125px;
     justify-content: center;
     align-items: center;
+    
+    background-color: var(--couleur-beige);
+
+
 }
 
 .header__content{
@@ -49,8 +68,8 @@ header{
     display: flex;
     justify-content: center;
     height: 36.8vw;
-
-    padding: 25px;
+    padding-top: 0px;
+    width: 100%;
 }
 
 .landing__banner-image{
@@ -82,7 +101,8 @@ header{
 }
 
 section{
-    padding: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .card{
