@@ -211,11 +211,11 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 25px;
+}
 
-        & img{
-        width: 30px;
-        padding: 10px;
-    }
+.subfooter img{
+    width: 30px;
+    padding: 10px;
 }
 
 .subfooter__icones{
