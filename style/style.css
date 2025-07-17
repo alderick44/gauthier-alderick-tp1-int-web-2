@@ -233,3 +233,34 @@ footer{
     justify-self: end;
     align-items: center;
 }
+
+
+@media screen and (max-width:1080px) {
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card__contenu{
+        width: 60%;
+        padding: 25px;
+    }
+
+    .card__data--big{
+        font-size: 3vw;
+    }
+
+    iframe {
+    width: 75%;
+    height: 500px;
+
+    }
+
+
+}
+
+@media screen and (max-width:650px) {
+    .card__data--big{
+        font-size: 4vw;
+    }
+}
