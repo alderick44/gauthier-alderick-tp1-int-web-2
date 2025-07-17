@@ -105,10 +105,21 @@ section{
     padding-bottom: 50px;
 }
 
+.section--background-color{
+    background-color: var(--couleur-blanc-bleu);
+}
+
+.section--flexbox {
+    display: flex;
+    justify-content: center;
+}
+
 .card{
     display: flex;
     justify-content: center;
     padding: 25px;
+    background-color: var(--couleur-gris-bleu);
+
 }
 
 .card__contenu{
@@ -122,14 +133,31 @@ section{
     display: flex;
 }
 
+.card__data--big{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
 .card__data--padding-right{ /*attention BEM*/
     padding-right: 75px;
 }
 
 .card__btn{
-    padding-right: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    padding: 15px;
+
+    font-size: 150%;
+	text-decoration: none;
+	/*border:solid 1px #0e0e0f;*/
+	color: #FFF8F0;
+	background-color: #0456AF;
+	width: fit-content;
+
+	border-radius: 20px;
+
 }
 
 iframe {
