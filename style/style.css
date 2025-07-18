@@ -55,6 +55,10 @@ header{
     top: 10px;
 }
 
+main{
+    background-color: var(--couleur-blanc-bleu);
+}
+
 .landing{
     display: flex;
     justify-content: center;
