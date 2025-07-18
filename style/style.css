@@ -282,7 +282,7 @@ footer{
         padding: 25px;
     }
 
-    .card__data--big{
+    .card__data-item{
         font-size: 3vw;
     }
 
@@ -292,7 +292,7 @@ footer{
 
     }
 
-    .subfooter__icones img{
+    .subfooter__socials{
         scale: 0.75;
 
     }
@@ -331,7 +331,7 @@ footer{
     scale: 0.70;
     }
 
-    .card__data--big{
+    .card__data-item{
         font-size: 4vw;
     }
 
@@ -347,7 +347,7 @@ footer{
         flex-direction: column;
     }
 
-    .subfooter__icones {
+    .subfooter__socials {
         flex-direction: column;
         align-items: center;
     }
