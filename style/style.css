@@ -29,36 +29,25 @@ header{
     display: flex;
     width: 90%;
     justify-content: space-between;
+    background-color: var(--couleur-beige);
 }
 
-.logo{
+
+
+.header__logo{
     width: 80px;
     height: auto;
 }
 
-.logo--center{
-    display: flex;
-    justify-content: center;
-}
-
-.logo--padding{
-    padding: 50px;
-}
-
-.nav{
-    display: flex;
-    align-items: center;
-}
-
-.nav__btn{
+.header__nav__btn{
     padding: 1.5rem;
 }
 
-.nav__btn--padding-right{
+.header__nav-btn{
     padding-right: 1.5rem;
 }
 
-.nav__icon{
+.header__nav-icon{
     scale: 0.75;
     position: relative;
     top: 10px;
@@ -117,6 +106,7 @@ header{
     text-align: center;
 }
 
+
 .form__btn{
 
     margin: 25px;
@@ -130,6 +120,11 @@ header{
 .form__email{
     padding: 5px;
     border-radius: 5px;
+}
+
+.form__container-btn{
+    display: flex;
+    justify-content: center;
 }
 
 section{
@@ -165,13 +160,20 @@ section{
     display: flex;
 }
 
-.card__data--big{
-    font-size: 2rem;
-    margin-bottom: 15px;
+.card__data-item{
+    border: solid 1px #000000;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-.card__data--padding-right{ /*attention BEM*/
-    padding-right: 75px;
+.card__data-item--padding-right {
+    margin-right: 75px;
+}
+
+.card__value{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .card__btn{
@@ -204,15 +206,28 @@ footer{
     
 }
 
+.footer__logo{
+    width: 80px;
+    height: auto;
+    padding: 50px;
+}
+
+.footer__container-logo{
+    display: flex;
+    justify-content: center;
+}
+
 .footer__nav{
     display: flex;
     justify-content: center;
     padding-bottom: 25px;
-
-
 }
 
-.footer__nav--responsive{
+.footer__link{
+    padding: 1.5rem;
+}
+
+.footer__nav-group{
     display: flex;
 }
 
@@ -224,14 +239,19 @@ footer{
     background-color: var(--couleur-beige);
 }
 
-.subfooter img{
+.subfooter__socials{
+    display: flex;
+    justify-content: center;
+}
+
+.subfooter__icone{
     width: 30px;
     padding: 10px;
 }
 
-.subfooter__icones{
+.subfooter__contact-list {
     display: flex;
-    justify-content: center;
+    justify-self: end;
 }
 
 .subfooter__contact{
@@ -239,10 +259,7 @@ footer{
     align-items: center;
 }
 
-.subfooter__contact--responsive {
-    display: flex;
-    justify-self: end;
-}
+
 
 
 @media screen and (max-width:1080px) {
@@ -287,7 +304,7 @@ footer{
         font-size: 4vw;
     }
 
-    .footer__nav--responsive{
+    .footer__nav-group{
         flex-direction: column;
     }
 
@@ -295,7 +312,7 @@ footer{
         justify-content: space-between;
     }
 
-    .subfooter__contact--responsive {
+    .subfooter__contact-list {
         flex-direction: column;
     }
 
@@ -303,3 +320,4 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+}
