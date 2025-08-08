@@ -41,10 +41,6 @@ header{
     height: auto;
 }
 
-.header__nav__btn{
-    padding: 1.5rem;
-}
-
 .header__nav-btn{
     padding-right: 1.5rem;
 }
@@ -53,6 +49,14 @@ header{
     scale: 0.75;
     position: relative;
     top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 main{
@@ -119,6 +123,10 @@ main{
 	background-color: #0456AF;
 	border-radius: 15px;
 
+}
+
+.form__btn:hover {
+    text-decoration: underline;
 }
 
 .form__input{
