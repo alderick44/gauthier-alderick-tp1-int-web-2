@@ -1,95 +1,73 @@
 :root {
-
 	/* palette  de couleurs*/
 	--couleur-beige: #FFF8F0;
-	/*sert de blanc*/
 	--couleur-gris-bleu: #f5f5f5;
 	--couleur-blanc-bleu: #f9f9f9;
 	--couleur-gris-transparent: rgb(235, 235, 235, 0.8);
-
 	--couleur-bleu: #0456AF;
 	--couleur-noir: #1F0812;
-
-
 }
-
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px
 }
-
 header{
     display: flex;
     width: 100vw;
     height: 125px;
     justify-content: center;
     align-items: center;
-    
     background-color: var(--couleur-beige);
 }
-
 .header__content{
     display: flex;
     width: 90%;
     justify-content: space-between;
     background-color: var(--couleur-beige);
 }
-
 .header__logo{
     width: 80px;
     height: auto;
 }
-
 .header__nav-btn{
     padding-right: 1.5rem;
 }
-
 .header__nav-icon{
     scale: 0.75;
     position: relative;
     top: 10px;
 }
-
 a{
     text-decoration: none;
 }
-
 a:hover{
     text-decoration: underline;
 }
-
 main{
     background-color: var(--couleur-blanc-bleu);
 }
-
 .landing{
     display: flex;
     justify-content: center;
     height: 36.8vw;
     padding-top: 0px;
 }
-
 .landing__banner-image{
     width: 100%;
     height: auto;
     position: absolute;
     z-index: 0;
 }
-
 .landing__content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 50%;
-
     gap: 25px;
-
     z-index: 10;
-    
 }
-
 .landing__title{
     color: var(--couleur-blanc-bleu);
     font-size: 200%;
@@ -98,9 +76,7 @@ main{
 		0 0 5px #000000,
 		0 0 10px #000000,
 		0 0 25px #000000;
-
 }
-
 .landing__text{
     color: var(--couleur-blanc-bleu);
 	font-family: "Bebas Neue";
@@ -113,123 +89,94 @@ main{
     text-align: center;
     margin: 5px;
 }
-
-
 .form__btn{
-
     margin: 25px;
     padding: 15px;
 	color: #FFF8F0;
 	background-color: #0456AF;
 	border-radius: 15px;
-
 }
-
 .form__btn:hover {
     text-decoration: underline;
 }
-
 .form__input{
     padding: 5px;
     border-radius: 5px;
     max-height: 25px;
 }
-
 .form__container-btn{
     display: flex;
     justify-content: center;
 }
-
 .card{
     display: flex;
     justify-content: center;
     padding: 25px;
     background-color: var(--couleur-gris-bleu);
-
 }
-
 .card__contenu{
     display: flex;
     flex-direction: column;
     padding: 50px;
     width: 35%;
 }
-
 .card__data{
     display: flex;
 }
-
 .card__data-item{
     border: solid 1px #000000;
     padding-right: 10px;
     padding-left: 10px;
 }
-
 .card__data-item--padding-right {
     margin-right: 75px;
 }
-
 .card__value{
     font-size: 2rem;
     margin-bottom: 15px;
     margin-top: 15px;
 }
-
 .card__btn{
     margin-right: 25px;
     margin-top: 25px;
     margin-bottom: 25px;
-
     padding: 15px;
-
     font-size: 150%;
 	text-decoration: none;
 	color: #FFF8F0;
 	background-color: #0456AF;
 	width: fit-content;
-
 	border-radius: 20px;
-
 }
-
 iframe {
     width: 38%;
     height: 500px;
     border: 0px none;
-
 }
-
 footer{
     border-top: 1px solid black;
     background-color: var(--couleur-beige);
-    
 }
-
 .footer__logo{
     width: 80px;
     height: auto;
     padding: 50px;
 }
-
 .footer__container-logo{
     display: flex;
     justify-content: center;
 }
-
 .footer__nav{
     display: flex;
     justify-content: center;
     padding-bottom: 25px;
 }
-
 .footer__link{
     padding: 1.5rem;
 }
-
 .footer__nav-group{
     display: flex;
 }
-
 .subfooter{
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -237,29 +184,22 @@ footer{
     border-top: #1f08122c solid 1px;
     background-color: var(--couleur-beige);
 }
-
 .subfooter__socials{
     display: flex;
     justify-content: center;
 }
-
 .subfooter__icone{
     width: 30px;
     padding: 10px;
 }
-
 .subfooter__contact-list {
     display: flex;
     justify-self: end;
 }
-
 .subfooter__contact{
     display: flex;
     align-items: center;
 }
-
-
-
 
 @media screen and (max-width:1080px) {
 
@@ -268,41 +208,30 @@ footer{
         width: 90%;
         gap: 0px;
     }
-
     .card{
         flex-direction: column;
         align-items: center;
     }
-
     .card__contenu{
         width: 60%;
         padding: 25px;
     }
-
     .card__data-item{
         font-size: 3vw;
     }
-
     iframe {
         width: 75%;
         height: 500px;
-
     }
-
     .subfooter__socials{
         scale: 0.75;
-
     }
-
     .footer__nav{
         scale: 0.85;
     }
-    
     .subfooter__contact{
         scale:0.85;
     }
-
-
 }
 
 @media screen and (max-width:825px) {
@@ -311,7 +240,6 @@ footer{
         display: flex;
         align-items: center;
     }
-
     .form__btn{
         margin: 10px;
         margin-top: 0px;
@@ -320,29 +248,22 @@ footer{
         color: #FFF8F0;
         background-color: #0456AF;
         border-radius: 20px;
-
     }
-
     .landing__content{
         scale: 0.70;
     }
-
     .card__data-item{
         font-size: 4vw;
     }
-
     .footer__nav-group{
         flex-direction: column;
     }
-
     .footer__nav{
         justify-content: space-between;
     }
-
     .subfooter__contact-list {
         flex-direction: column;
     }
-
     .subfooter__socials {
         flex-direction: column;
         align-items: center;
