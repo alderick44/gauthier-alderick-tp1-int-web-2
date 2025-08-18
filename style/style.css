@@ -178,6 +178,33 @@ main{
 	width: fit-content;
 	border-radius: 20px;
 }
+
+.card-why-us{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+    justify-items: center;
+
+    & .card-why-us__item:nth-child(odd){
+        background-color: #0000002a;
+    }
+}
+
+.card-why-us__item{
+    background-color: #0000001b;
+    border-radius: 25px;
+    padding: 25px;
+
+    & p,h3 {  /* mettre une ","  ou faire une 2e imbrication?*/
+        text-align: center;
+    }
+
+    & ul li::marker {
+        content:"- ";
+    }
+}
+
+
 iframe {
     width: 38%;
     height: 500px;
