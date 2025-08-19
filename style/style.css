@@ -73,14 +73,11 @@ main{
 
 .banner__text{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 25%;
     width: 100%;
     text-align: center;
-    transform: translate(-50%,-50%);
-
     color: var(--couleur-blanc-bleu);
-    font-size: 200%;
+    font-size: 2vw;
 	font-family: "Bebas Neue";
 	text-shadow:
 		0 0 5px #000000,
