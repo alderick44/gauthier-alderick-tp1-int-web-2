@@ -202,11 +202,23 @@ main{
     & p,h3 {  /* mettre une ","  ou faire une 2e imbrication?*/
         text-align: center;
     }
-
     & ul li::marker {
         content:"- ";
     }
+    &:hover{
+        transform: scale(1.10);
+        animation: background-color 2s alternate;
+    }
 }
+
+    /*
+    @keyframes background-color {
+        0%      {background-color: #9a29291b;}
+        50%     {background-color: #8d81811b;}
+        100%    {background-color: #0000001b;}
+    }
+    */
+
 iframe {
     width: 38%;
     height: 500px;
