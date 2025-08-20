@@ -83,15 +83,16 @@ main{
 		0 0 5px #000000,
 		0 0 10px #000000,
 		0 0 25px #000000;
-    animation: banner__text 2s alternate;
+    animation: banner__text 2.25s;
     
 }
     @keyframes banner__text {
-        0%  {transform: translateY(0px);}
-        25% {transform: translateY(-20px);}
-        50% {transform: translateY(10px);}
-        /*75%*/
-        100% {transform: translateY(0px);}
+        0%      {transform: translateY(0px);}
+        25%     {transform: translateY(-20px);}
+        50%     {transform: translateY(10px);}
+        75%     {transform: translateY(-5px)}
+        90%     {transform: translateY(3px);}
+        100%    {transform: translateY(0px);}
     }
     
 
