@@ -1,12 +1,23 @@
 :root {
 	/* palette  de couleurs*/
 	--couleur-beige: #FFF8F0;
-	--couleur-gris-bleu: #f5f5f5;
+	--couleur-gris-bleu: #f7f7ff; /*mise à jour 2025-08-21*/
 	--couleur-blanc-bleu: #f9f9f9;
 	--couleur-gris-transparent: rgb(235, 235, 235, 0.8);
 	--couleur-bleu: #0456AF;
 	--couleur-noir: #1F0812;
+
+
 }
+
+    h1,h2,h3 {
+        font-family: "Bebas Neue";
+    }
+
+    p, ul{
+        font-family: "Inter";
+    }
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -45,7 +56,7 @@ a:hover{
     text-decoration: underline;
 }
 main{
-    background-color: var(--couleur-blanc-bleu);
+    background-color: var(--couleur-gris-bleu);
 }
 .landing{
     display: flex;
@@ -186,6 +197,8 @@ main{
 	width: fit-content;
 	border-radius: 20px;
 }
+
+/* Page soumission */
 .card-why-us{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -193,21 +206,19 @@ main{
     justify-items: center;
     padding: 1vw;
 
-    & .card-why-us__item:nth-child(odd){        /*Sélecteur CSS avancé*/
-        background-color: #0000002a;
+    & .card-why-us__item:nth-child(odd){  /*Sélecteur CSS avancé*/
+        background-color: #E6E6EE;
     }
-    & .card-why-us__item[data-type^="reverse-border"] { 
-        /*Sélecteur CSS avancé.
-        la modification est faite avec 2 selecteurs pour apprendre 2 méthodes*/
-        border: solid rgba(0, 0, 0, 0.614);
+    & .card-why-us__item[data-type^="reverse-border"] { /*Utiliser pour les produits à la une*/
+        border: solid #ACACE1;
     }
 }
 .card-why-us__item{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #0000001b;
-    border: solid #0000002a;
+    background-color: e5e5f9;
+    border: solid #D3D3E7;
     border-radius: 25px;
     padding: 25px;
     transition: transform 1.75s;
