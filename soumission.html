@@ -10,29 +10,30 @@
         
     </head>
     <body>
-        <header>
+        <a href="#content" class="skip-link">Aller au contenu principal</a>
+        <header role="banner">
             <div class="container header__content">
-                <img src="media-files/images/logo-sporacultus.png" class="header__logo" alt="logo">
-                <nav>
-                    <img class="header__nav-icon" src="media-files/images/icone-champignon.png" alt="icone champignon">
-                    <a class="header__nav-btn" href="#section1">Section 1</a>
+                <img src="media-files/images/logo-sporacultus.png" class="header__logo" alt="logo sporacultus">
+                <nav role="navigation" aria-label="Navigation principale">
+                    <img class="header__nav-icon" src="media-files/images/icone-champignon.png" alt="icone champignon" aria-hidden="true">
+                    <a class="header__nav-btn" href="index.html">Accueil</a>
 
-                    <img class="header__nav-icon" src="media-files/images/icone-champignon.png" alt="icone champignon">
-                    <a class="header__nav-btn" href="#section2">Section 2</a>
+                    <img class="header__nav-icon" src="media-files/images/icone-champignon.png" alt="icone champignon" aria-hidden="true">
+                    <a class="header__nav-btn" href="soumission.html">Soumission</a>
                 </nav>
             </div>
         </header>
-        <main>
-                <section id="section1">
+        <main id="content" role="main">
+                <section id="section1" role="region" aria-label="Bannière d'accueil">
                     <div class="banner">  <!--Change BEM landing (banner?)-->
-                        <img src="media-files/images/1000-champignons.jpg" class="banner__image">
+                        <img src="media-files/images/1000-champignons.jpg" class="banner__image" alt="">
                         <div class="banner__text">
                             <h1>Devenez un partenaire</h1>
                             <p>Rejoignez notre réseau et benéficiez d'un approvisionnement fiable et adapté à vos besoins.</p>
                         </div>
                     </div>
                 </section>
-                <section id="section2" class="container">
+                <section id="section2" class="container" role="region" aria-label="Section principale">
                     <h2>Pourquoi travailler avec nous?</h2>
                     <div class="card-why-us">
                         <div>
@@ -46,7 +47,7 @@
                         </div>
                     </div>
                     <h2>Notre offre</h2>
-                    <div class="card-why-us"> <!-- Revoir utilisation nom de class (BEM)-->
+                    <div class="card-why-us" role="region" aria-label="Carte 1, BRF"> <!-- Revoir utilisation nom de class (BEM)-->
                         <div class="card-why-us__item">
                             <h3>Mycélium sur BRF</h3>
                             <p> Nous prenons en charge toutes les étapes de production afin que vous puissiez passer rapidement à la récolte.
@@ -57,13 +58,13 @@
                                 <li>Production grande échelle</li>
                             </ul>
                         </div>
-                        <div class="card-why-us__item" data-type="reverse-border" >
-                            <img src="media-files/images/spawn-bags.JPG">
+                        <div class="card-why-us__item" data-type="reverse-border" role="region" aria-label="Carte 2, mycelium sur grain" >
+                            <img src="media-files/images/spawn-bags.JPG" alt="6 sacs de mycélium sur grain">
                             <h3>Mycélium sur grain</h3>
                             <p>Si vous souhaitez préparer votre propre substrat vous pouvez utiliser notre mycélium sur grain de qualité. La livraison est plus simple et vous pouvez conserver plus facilement le produit pour le mélanger plus tard.</p>
                         </div>
-                        <div class="card-why-us__item">
-                            <img src="media-files/images/pleurote-exterieur-automne.jpg">
+                        <div class="card-why-us__item" role="region" aria-label="Carte 3, blocs de production">
+                            <img src="media-files/images/pleurote-exterieur-automne.jpg" alt="bloc de production en fructification">
                             <h3>Blocs de production</h3>
                             <p>Pour la culture intérieur, vous pouvez utiliser nos blocs de production prêts à produire.</p>
                         </div>
@@ -78,10 +79,10 @@
                         <li>Pureté microbiologique</li>
                     </ul>
                     <div class="expertise">
-                        <img src="media-files/images/grain-en-sac-hotte.JPG" class="expertise__image">
+                        <img src="media-files/images/grain-en-sac-hotte.JPG" class="expertise__image" alt="8 sacs de grain stérile">
                         <img src="media-files/images/labo-hotte.JPG" class="expertise__image"
-                        data-type="colone-3">
-                        <img src="media-files/images/grain-en-sac-close-up.JPG" class="expertise__image">
+                        data-type="colone-3" alt="hotte de laboratoire professionnelle">
+                        <img src="media-files/images/grain-en-sac-close-up.JPG" class="expertise__image" alt="gros plan sur un sac de grain stérile">
                     </div>
 
                 </section>
@@ -117,20 +118,20 @@
                     </form>
                 </section>
         </main>
-        <footer>
+        <footer role="contentinfo" aria-label="Bas de page">
             <div class="container">
                 <div class="footer__container-logo">
-                <img src="media-files/images/logo-sporacultus.png" class="footer__logo" alt="logo">
+                    <img src="media-files/images/logo-sporacultus.png" class="footer__logo" alt="logo sporacultus">
                 </div>
                 <div class="footer__nav">
-                    <nav>
+                    <nav role="navigation" aria-label="Navigation de bas de page - groupe 1">
                         <div class="footer__nav-group">
                             <a class="footer__link" href="index.html">À propos</a>
                             <a class="footer__link" href="index.html">Fonctionnalités</a>
                             <a class="footer__link" href="index.html">Prix</a>
                         </div>
                     </nav>
-                    <nav>
+                    <nav role="navigation" aria-label="Navigation de bas de page - groupe 2">
                         <div class="footer__nav-group">
                             <a class="footer__link" href="index.html">Carrières</a>
                             <a class="footer__link" href="index.html">FAQ</a>

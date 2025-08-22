@@ -10,13 +10,42 @@
 
 }
 
-    h1,h2,h3 {
-        font-family: "Bebas Neue";
-    }
+h1,h2,h3 {
+    font-family: "Bebas Neue";
+}
 
-    p, ul{
-        font-family: "Inter";
+p, ul{
+    font-family: "Inter";
+}
+
+.skip-link{
+    border: 0;
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+    &:focus{
+        background-color: #eee;
+        clip-path: none;
+        color: #444;
+        display: block;
+        font-size: 1em;
+        height: auto;
+        left: 5px;
+        line-height: normal;
+        padding: 15px 23px 14px;
+        text-decoration: none;
+        top: 5px;
+        width: auto;
+        z-index: 100000;
     }
+}
+
+
 
 .container{
     max-width: 1200px;
@@ -57,6 +86,10 @@ a:hover{
 }
 main{
     background-color: var(--couleur-gris-bleu);
+    &[data-type="confirmation"]{
+    padding: 25px;
+    min-height: 50vh;
+    }
 }
 .landing{
     display: flex;
@@ -95,6 +128,7 @@ main{
 		0 0 10px #000000,
 		0 0 25px #000000;
     animation: banner__text 2.25s;
+    background-color: rgba(0, 0, 0, 0.329);
     
 }
     @keyframes banner__text {
@@ -124,6 +158,7 @@ main{
 		0 0 5px #000000,
 		0 0 10px #000000,
 		0 0 25px #000000;
+    background-color: rgba(0, 0, 0, 0.29);
 }
 .landing__text{
     color: var(--couleur-blanc-bleu);
@@ -136,6 +171,7 @@ main{
     width: 80%;
     text-align: center;
     margin: 5px;
+    background-color: #0000001f;
 }
 
 .form__btn{
@@ -206,10 +242,12 @@ main{
     border: solid 1px #000000;
     padding-right: 10px;
     padding-left: 10px;
-}
-.card__data-item--padding-right {
+
+    &.card__data-item--padding-right {
     margin-right: 75px;
+    }
 }
+
 .card__value{
     font-size: 2rem;
     margin-bottom: 15px;
@@ -236,10 +274,10 @@ main{
     justify-items: center;
     padding: 1vw;
 
-    & .card-why-us__item:nth-child(odd){  /*Sélecteur CSS avancé*/
+    .card-why-us__item:nth-child(odd){  /*Sélecteur CSS avancé. mettre & ou pas..regarder cours?*/ 
         background-color: #E6E6EE;
     }
-    & .card-why-us__item[data-type^="reverse-border"] { /*Utiliser pour les produits à la une*/
+    .card-why-us__item[data-type^="reverse-border"] { /*Utiliser pour les produits à la une*/
         border: solid #ACACE1;
     }
 }
@@ -251,10 +289,9 @@ main{
     border: solid #D3D3E7;
     border-radius: 25px;
     padding: 25px;
-    transition: transform 1.75s;
     height: 20vw;
 
-    & p,h3 {  /* mettre une ","  ou faire une 2e imbrication?*/
+    & p,h3 {  /* mettre une ","  ou faire une 2e imbrication?               erreur?*/
         text-align: center;
     }
     & ul li::marker {
@@ -265,6 +302,7 @@ main{
     }
     &:hover {
         transform: scale(1.10);
+        transition: transform 1.75s;
         /* animation: background-color 2s alternate; */
     }
     & img {
@@ -287,20 +325,17 @@ main{
     gap: 2vw;
     justify-items: center;
     padding: 1vw;
-    & .expertise__image[data-type^="colone-3"]{
+    & .expertise__image[data-type^="colone-3"]{      /*Renommer*/
         grid-column: 2/4;
         grid-row: 1/3;
         height: 100%;
         object-fit: cover;
     }
-
 }
-    
-.expertise__image {
+.expertise__image {   /*peut etre imbriqué?*/
     width: 100%;
     height: auto;
     }
-
 iframe {
     width: 38%;
     height: 500px;
@@ -309,6 +344,7 @@ iframe {
 footer{
     border-top: 1px solid black;
     background-color: var(--couleur-beige);
+
 }
 .footer__logo{
     width: 80px;
