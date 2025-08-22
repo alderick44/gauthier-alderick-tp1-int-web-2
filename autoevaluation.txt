@@ -5,5 +5,7 @@ J’ai également utilisé un sélecteur [data-type^= “colonne-2/3“] pour fa
 J’ai également ajouté des animations sur mes cartes de la section « Notre offre », les cartes grandissent lentement lors d’un survol. 
 Une animation est aussi ajoutée sur le texte de la bannière, le texte bondit quelques fois au chargement de la page. J’ai rencontré des problèmes de positionnement lors de la création de cette animation car j’avais positionné le texte avec « transform : translate(…); » alors lorsque j’ai appliqué une animation utilisant le même attribut CSS. Mon texte ne se comportait pas du tout comme prévu alors j’ai dû repositionner mon texte plus simplement sans utiliser de « transform : translate(…); ».
 
+Pour l'accessibilité, j'ai installé NVDA et je m'en suis servi pour m'assurer de comprendre l'utilité de ce que je faisais. J'ai donc ajouté des "aria-label" à des endroits comme les navigations, la bannière, les sections principales et j'ai aussi ajouté un "aria-label" sur la page d'accueil pour clarifier les données d'émissions de CO2 car NVDA ne donnait pas un message clair du texte. J'ai donc fait des essais avec NVDA et finalement utilisé des espaces pour que l'audio soit plus net (CO2 vs C O 2).
+
 Le travail m’a donc permis d’apprendre des usages concrets des sélecteurs avancés, comme la création d’une grille format 2/3 avec une seule classe, ce qui m’a poussé à organiser mon CSS de manière plus propre.
 J’ai mieux compris les imbrications, (la différence entre &.classe et &  .classe).
