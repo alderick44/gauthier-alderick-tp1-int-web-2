@@ -310,22 +310,25 @@ main{
     }
 }
 
-      @media screen and (max-width: 900px) {
+    @media screen and (max-width: 900px) {
     .card-why-us{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        gap: 25px
-
+        gap: 25px;
     }
 
+    .card-why-us[data-type="section-travailler-avec-nous"]{
+        grid-template-rows: 1fr 1fr 0.1fr;
+    }
+
+    }
     .card-why-us__item{
         height: auto;
     }
-
     .card-why-us__item img{
         display: none;
     }
-}
+
 
 
     /*
