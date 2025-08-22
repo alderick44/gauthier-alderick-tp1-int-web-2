@@ -8,6 +8,8 @@
 	--couleur-noir: #1F0812;
 
 
+
+
 }
 
 h1,h2,h3 {
@@ -328,9 +330,6 @@ main{
     .card-why-us__item img{
         display: none;
     }
-
-
-
     /*
     @keyframes background-color {
         0%      {background-color: #9a29291b;}
@@ -475,5 +474,9 @@ footer{
     .subfooter__socials {
         flex-direction: column;
         align-items: center;
+    }
+    .banner__text{
+    font-size: 2.7vw;
+    
     }
 }
