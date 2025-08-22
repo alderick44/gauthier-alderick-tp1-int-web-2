@@ -310,6 +310,23 @@ main{
     }
 }
 
+      @media screen and (max-width: 900px) {
+    .card-why-us{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 25px
+
+    }
+
+    .card-why-us__item{
+        height: auto;
+    }
+
+    .card-why-us__item img{
+        display: none;
+    }
+}
+
 
     /*
     @keyframes background-color {
