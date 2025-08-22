@@ -87,6 +87,34 @@
                 </section>
                 <section class="container">
                     <h2>Formulaire de demande</h2>
+                    <form action="confirmation.html" method="post" class="formulaire-demande">
+                        <div class="formulaire-demande__field">
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div class="formulaire-demande__field">
+                            <label for="email">Email :</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="formulaire-demande__field">
+                            <label for="telephone">Téléphone :</label>
+                            <input type="tel" id="telephone" name="telephone">
+                        </div>
+                        <fieldset class="formulaire-demande__field">
+                            <legend>Choisissez le type de produit :</legend>
+                            <input type="radio" id="mycelium-brf" name="produit" value="mycelium-brf">
+                            <label for="mycelium-brf">Mycélium sur BRF</label>
+                            <input type="radio" id="mycelium-grain" name="produit" value="mycelium-grain">
+                            <label for="mycelium-grain">Mycélium sur grain</label>
+                            <input type="radio" id="blocs-production" name="produit" value="blocs-production">
+                            <label for="blocs-production">Blocs de production</label>
+                        </fieldset>
+                        <div class="formulaire-demande__field">
+                            <label for="message">Message :</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="formulaire-demande__submit">Envoyer</button>
+                    </form>
                 </section>
         </main>
         <footer>

@@ -157,6 +157,26 @@ main{
     display: flex;
     justify-content: center;
 }
+
+/*Formulaire page soumission*/
+
+.formulaire-demande{
+    padding-bottom: 25px;
+}
+.formulaire-demande__field{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.formulaire-demande__submit {
+    padding: 10px;
+    background-color: #0456AF;
+    color: white;
+    border: none;
+    &:hover {
+        background-color: #04458a;
+    }
+}
 .card{
     display: flex;
     justify-content: center;
