@@ -177,6 +177,16 @@ main{
         background-color: #04458a;
     }
 }
+
+/*Page de confirmation*/
+.confirmation__btn-retour{     /*variables*/
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px;
+	color: #FFF8F0;
+	background-color: #0456AF;
+	border-radius: 15px;
+}
 .card{
     display: flex;
     justify-content: center;
